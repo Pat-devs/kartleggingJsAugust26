@@ -1,28 +1,19 @@
 // skrive en melding til console
 
-// variabler: brukes til lagre ting (huske ting for å bruke senere)
+// kolleksjons typer variabler
 
-// vi kan lage en variabel med nøkkelordet "let", og gi den et navn og en verdi.
-// let er nøkkelordet
-// myName er navnet på variablen
-// og hva enn vi skriver etter = er verdien (den er "Patryk" her)
+// 1. "Object":
 
-let myName = "Patryk"
-const birthYear = 1980
-
-console.log("hei") // log er en funskjon
-
-
-// lage en egen funskjon
-function myFunction() {
-    console.log("dette er kode inni vår egen funksjon")
+let userPatryk = {
+    name: "Patryk",
+    location: "Porsgrunn",
+    birthDate: 1980
 }
 
+// to access data inside the object:
+console.log(userPatryk) // prints entire object, not that useful, usually we want one item at a time, f.eks:
 
-// bruke en funksjon:
-myFunction()
+console.log(userPatryk.location)
+console.log(userPatryk.name)
 
-myFunction()
-myFunction()
-myFunction()
-myFunction()
+
