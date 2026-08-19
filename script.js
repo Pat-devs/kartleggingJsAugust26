@@ -1,23 +1,32 @@
 // velg element basert på id -- da bruker vi #navnpåid, f.eks:
 
-let counterValueElement = document.querySelector("#counter-value");
+// <p id="switch-value">Off</p>
+// <button id="button-toggle-switch">On/off</button>
 
+let switchValueElement = document.querySelector("#switch-value");
 
 // store counter value (number) in a variable:
-let counter = 0
+let switchValue = false
 
-counterValueElement.textContent = counter
+// switchValueElement.textContent = counter
 
 
 // lag funksjon som skal kjøre onclick...
-
-function incrementCounter() 
+function toggleSwitch() 
 {
-    counter = counter + 1 // I. increment the counter
-    counterValueElement.textContent = counter // II. update the counter on the page
+
+    if (switchValue == false) { // koden under denne klammen kjører bare hvis switchValue er false
+        switchValue = true
+        switchValueElement.textContent = "On"
+    } 
+    else { // koden under denne klammen kjører bare hvis if-betingelse over ikke kjørte
+        switchValue = false
+        switchValueElement.textContent = "Off"
+    }
+
 }
 
 // hent knappen:
-let buttonIncrementCount = document.querySelector("#button-increment-count")
-// sett opp onclick event til å bruke vår incrementCounter funksjon:
-buttonIncrementCount.onclick = incrementCounter
+let buttonToggle = document.querySelector("#button-toggle-switch")
+// sett opp onclick event til å bruke vår toggleSwitch funksjon:
+buttonToggle.onclick = toggleSwitch
