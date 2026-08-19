@@ -1,31 +1,23 @@
-// for å hente elementer i javascript...
+// velg element basert på id -- da bruker vi #navnpåid, f.eks:
 
-let myElement = document.querySelector("h1") // samme som i css `h1 { kode }`
+let counterValueElement = document.querySelector("#counter-value");
 
 
-// for å endre på innholdet, eller stylen til elemented må vi bruke de innebygde verktøyene...
+// store counter value (number) in a variable:
+let counter = 0
 
-// 1. Endre tekst
-// myElement.textContent = "test"
+counterValueElement.textContent = counter
 
-// 2. endre style (css)
-// myElement.style = "color: red;" // css koden må da være inni "" (quotation marks)
 
-// velge button og lagre i en variabel
+// lag funksjon som skal kjøre onclick...
 
-let myButton = document.querySelector("button")
-
-// 1. et lite oppdrag: Få konsollen til å si "button clicked" når vi klikker på knappen
-
-// Først: sett myButton.onclick til en funksjon vi vil kjøre:
-myButton.onclick = clickHandler
-
-// og lag funksjonen vi skrev navnet på over:
-function clickHandler() {
-    console.log("button clicked")
+function incrementCounter() 
+{
+    counter = counter + 1 // I. increment the counter
+    counterValueElement.textContent = counter // II. update the counter on the page
 }
 
-// for å oppsummere klikk behandling: 
-// 1. Velg element vi skal lage en klikk event for (f.eks: let myButton = document.querySelector("button"))
-// 2. bruk .onclick og sett opp en egen funksjon som skal kjøres når klikk eventet skjer, f.eks: myButton.onclick = clickHandler
-// 3. lag funskjonen vi oppgav etter = i forrige steg, f.eks: function clickHandler() { vår kode... }
+// hent knappen:
+let buttonIncrementCount = document.querySelector("#button-increment-count")
+// sett opp onclick event til å bruke vår incrementCounter funksjon:
+buttonIncrementCount.onclick = incrementCounter

@@ -2,3 +2,7 @@ body {
     background-color: rgb(50,50,50);
     color: rgb(255,255,200);
 }
+
+#counter-value {
+    color: white;
+}
