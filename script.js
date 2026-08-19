@@ -60,10 +60,21 @@ let user4 = "Hanna"
 
 // samme men i et array...
 
-let users = ["Patryk", "Hans", "Maria", "Hanna"]
+// let users = ["Patryk", "Hans", "Maria", "Hanna"]
 
-console.log(users)
+// console.log(users)
 
 // an array does not have named keys, instead they have numbered indexes:
 
-console.log(users[0]) // gets the first value, arrays always start at 0
+//console.log(users[0]) // gets the first value, arrays always start at 0
+
+// print alle unntatt "Hans" (index 1)
+
+// console.log()
+
+//users[1] = undefined
+
+//console.log(users)
+
+// an array can also contain objects:
+let users = [userPatryk, userAnna, userBob]
