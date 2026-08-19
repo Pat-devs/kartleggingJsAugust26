@@ -1,21 +1,31 @@
 // skrive en melding til console
 
-// skrive ut text
-console.log("god morgen")
-console.log("melding")
+// variabler: brukes til lagre ting (huske ting for å bruke senere)
 
-console.log("hei " + " hvordan går det?")
+// vi kan lage en variabel med nøkkelordet "let", og gi den et navn og en verdi.
+// let er nøkkelordet
+// myName er navnet på variablen
+// og hva enn vi skriver etter = er verdien (den er "Patryk" her)
+let myName = "" 
 
-console.log("2" + "2")
-// skrive ut tall
+console.log(myName)
 
-console.log(2 + 2)
+myName = "Bob" // reassinment of value
 
-console.log(5 - 3) // også console.log("5" - "3") virker :)
+console.log(myName)
 
-console.log(5 * 5)
+myName = 2 // reassinment of value
 
-console.log(3 / 2)
+console.log(myName)
 
+// konstant variabler (altså kan ikke endres på)....
 
+const birthYear = 1980
 
+console.log(birthYear)
+
+birthYear = 2000
+
+myName 
+
+birthYear
