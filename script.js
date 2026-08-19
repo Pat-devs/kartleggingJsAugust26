@@ -1,11 +1,11 @@
 // velg element basert på id -- da bruker vi #navnpåid, f.eks:
 
-// <p id="switch-value">Off</p>
-// <button id="button-toggle-switch">On/off</button>
-
 let switchValueElement = document.querySelector("#switch-value");
 
-// store counter value (number) in a variable:
+let textParagraphElement = document.querySelector("#some-text")
+
+
+// store switch (true of false) value in a variable:
 let switchValue = false
 
 // switchValueElement.textContent = counter
@@ -18,10 +18,14 @@ function toggleSwitch()
     if (switchValue == false) { // koden under denne klammen kjører bare hvis switchValue er false
         switchValue = true
         switchValueElement.textContent = "On"
+
+        textParagraphElement.style = "display: block;"
     } 
     else { // koden under denne klammen kjører bare hvis if-betingelse over ikke kjørte
         switchValue = false
         switchValueElement.textContent = "Off"
+
+        textParagraphElement.style = "display: none;"
     }
 
 }

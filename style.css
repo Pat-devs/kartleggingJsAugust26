@@ -6,3 +6,7 @@ body {
 #counter-value {
     color: white;
 }
+
+#some-text {
+    display: block;
+}
