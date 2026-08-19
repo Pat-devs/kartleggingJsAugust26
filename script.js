@@ -6,26 +6,23 @@
 // let er nøkkelordet
 // myName er navnet på variablen
 // og hva enn vi skriver etter = er verdien (den er "Patryk" her)
-let myName = "" 
 
-console.log(myName)
-
-myName = "Bob" // reassinment of value
-
-console.log(myName)
-
-myName = 2 // reassinment of value
-
-console.log(myName)
-
-// konstant variabler (altså kan ikke endres på)....
-
+let myName = "Patryk"
 const birthYear = 1980
 
-console.log(birthYear)
+console.log("hei") // log er en funskjon
 
-birthYear = 2000
 
-myName 
+// lage en egen funskjon
+function myFunction() {
+    console.log("dette er kode inni vår egen funksjon")
+}
 
-birthYear
+
+// bruke en funksjon:
+myFunction()
+
+myFunction()
+myFunction()
+myFunction()
+myFunction()
