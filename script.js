@@ -2,22 +2,22 @@
 
 */
 
-let hour = 2 // 0 til 24
+let temperture = 2 // celcius temperature
 
-//  hvis hour er mellom kl 5 og kl 11: si "Good morning"
-//  hvis hour er mellom kl 12 og kl 16: si "Good afternoon"
-//  hvis hour er mellom kl 17 og kl 22: si "Good evening"
-// i alle andre tilfeller si bare "Good night"
+// hvis det er mindre enn 10 grader: si "Det er kaldt!"
+// dersom det er mer enn 10 men mindre enn 20: "Det er litt kaldt."
+// dersom det er mer enn 20 men mindre enn 25: "Det akkurat passlig varmt"
+// dersom det er mer enn 25 si: "Det er veldig varmt!"
 
-if (hour >= 5 && hour <= 11) {
-    console.log("Good morning")
+if (temperture < 10) {
+    console.log("Det er kaldt!")
 }
-else if (hour >= 12 && hour <= 16) {
-    console.log("Good afternoon")
+else if (temperture > 10 && temperture < 20) {
+    console.log("det er litt kaldt.")
 }
-else if (hour >= 17 && hour <= 22) {
-    console.log("Good evening")
+else if (temperture > 20 && temperture < 25) {
+    console.log("det er akkurat passelig varmt")
 }
 else {
-    console.log("good night?")
+    console.log("Det er veldig varmt!")
 }
