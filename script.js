@@ -1,36 +1,23 @@
-// velg element basert på id -- da bruker vi #navnpåid, f.eks:
+/* 
 
-let switchValueElement = document.querySelector("#switch-value");
+*/
 
-let textParagraphElement = document.querySelector("#some-text")
+let hour = 2 // 0 til 24
 
+//  hvis hour er mellom kl 5 og kl 11: si "Good morning"
+//  hvis hour er mellom kl 12 og kl 16: si "Good afternoon"
+//  hvis hour er mellom kl 17 og kl 22: si "Good evening"
+// i alle andre tilfeller si bare "Good night"
 
-// store switch (true of false) value in a variable:
-let switchValue = false
-
-// switchValueElement.textContent = counter
-
-
-// lag funksjon som skal kjøre onclick...
-function toggleSwitch() 
-{
-
-    if (switchValue == false) { // koden under denne klammen kjører bare hvis switchValue er false
-        switchValue = true
-        switchValueElement.textContent = "On"
-
-        textParagraphElement.style = "display: block;"
-    } 
-    else { // koden under denne klammen kjører bare hvis if-betingelse over ikke kjørte
-        switchValue = false
-        switchValueElement.textContent = "Off"
-
-        textParagraphElement.style = "display: none;"
-    }
-
+if (hour >= 5 && hour <= 11) {
+    console.log("Good morning")
 }
-
-// hent knappen:
-let buttonToggle = document.querySelector("#button-toggle-switch")
-// sett opp onclick event til å bruke vår toggleSwitch funksjon:
-buttonToggle.onclick = toggleSwitch
+else if (hour >= 12 && hour <= 16) {
+    console.log("Good afternoon")
+}
+else if (hour >= 17 && hour <= 22) {
+    console.log("Good evening")
+}
+else {
+    console.log("good night?")
+}
